@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Выпить пиво с Саньком</title>
+  </head>
+  <body>
+
+    <h1>Кто хочет попить пивка со мной???!</h1>
+    <h2>Заполните-ка формочку снизу и тогда мб подумаю</h2>
+
+    <form action="http://starbuzzcoffee.com/processorder.php" method="post">
+		<p>
+          Ну че выбирайте:
+            <select name="beans">
+              <option value="House Blend">Темное нефильтрованное</option>
+              <option value="Bolivia">Светлое</option>
+              <option value="Guatemala">Настоечку</option>
+              <option value="Kenya">Пиво свойское</option>
+            </select>
+		</p>
+		<p>
+          Тип посиделки:<br>
+            <input type="radio" name="beantype" value="whole">
+            Просто попить со мной
+            <br>
+            <input type="radio" name="beantype" value="ground" checked> 
+            Попить и подраться
+		</p>
+		<p>
+		  Количество банок пива: <input type="number" name="bags" min="1" max="10">
+		</p>
+		<p>
+		  Когда???: <input type="date" name="date">
+		</p>
+		<p>
+          Плюшки:<br>
+            <input type="checkbox" name="extras[]" value="giftwrap">
+            Пиво в подарочной упаковке
+            <br>
+            <input type="checkbox" name="extras[]" value="catalog" checked>
+            Чипсы и сухарики
+		</p>
+		<p>
+          Где будем попивать: <br>
+          Твое имя:
+            <input type="text" name="name" value=""><br>
+          Адрес твоей жизни:
+            <input type="text" name="address" value=""><br>
+          Город:
+            <input type="text" name="city" value=""><br>
+          Область твоей деревни:
+            <input type="text" name="state" value=""><br>
+          Почтовый индекс (зачем??!):
+            <input type="text" name="zip" value=""><br>
+		  Твой тел для связи:
+			<input type="tel" name="phone" value=""><br>
+		</p>
+		<p>
+          Мб комменты?:<br>
+            <textarea name="comments"></textarea>
+		</p>
+		<p>
+            <input type="submit" value="Гогого">
+		</p>
+      </form>
+  </body>
+</html>
